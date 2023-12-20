@@ -255,4 +255,3 @@ dependencies:
       - tensorflow==2.15.0.post1
       - tensorflow-estimator==2.15.0
       - tensorflow-io-gcs-filesystem==0.34.0
-prefix: /home/bioinfo/miniconda3/envs/deepromic
