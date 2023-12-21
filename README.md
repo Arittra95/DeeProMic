@@ -75,9 +75,10 @@ options:
 ## Explanation of the Output files:
 
 #### blast_against_essential_genes.tsv: 
-BLAST outputs of ```potential_targets.fasta``` that were aligned against human.fasta. Suggestion: Avoid targets that are homologues to human proteins. 
+
+BLAST outputs of ```potential_targets.fasta``` that were aligned against human.fasta. Suggestion: Avoid targets that are homologues to human proteins.Please go through [Diamond](https://github.com/bbuchfink/diamond_docs/blob/master/1%20Tutorial.MD) for further analysis.   
 #### blast_against_host.tsv:
-BLAST outputs of ```potential_targets.fasta``` that were aligned against essential.fasta. Suggestion: Select targets that are homologues to essential proteins. 
+BLAST outputs of ```potential_targets.fasta``` that were aligned against essential.fasta. Suggestion: Select targets that are homologues to essential proteins. Please go through [Diamond](https://github.com/bbuchfink/diamond_docs/blob/master/1%20Tutorial.MD) for further analysis. 
 #### dde.csv:
 Dipeptide Deviation from Expected Mean features (DDE) of the ```-i INPUT``` fasta file.
 #### filtered_sequences.csv:
@@ -86,6 +87,14 @@ proteins that have probability socre fpr ```Probability_Class_1``` more than the
 Fasta file that contains the protein sequences of ```filtered_sequences.csv```. 
 #### probability_score.csv:
 Probability score of each portein being druggable (Probability_Class_1) or non_druggable (Probability_Class_0).
+
+## Explanation of other Output files outside the output directory:
+
+#### Essential_gene_DB.dmnd: 
+Diamond database file of the essential.fasta.
+
+#### host_protein_DB.dmnd: 
+Diamond database file of the human.fasta.
 
 
 
