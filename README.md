@@ -51,3 +51,41 @@ python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
 
 ```
 
+## Options:
+
+```
+Wellcome to DeeproMic! Please provide a protein fasta file as input
+usage: deepromic.py [-h] -i INPUT [-t THRESHOLD] [-o OUTPUT]
+
+Description of your script.
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input protein FASTA file (sequences with short headers
+                        are preferable)
+  -t THRESHOLD, --threshold THRESHOLD
+                        Threshold for Probability score to filter druggable
+                        proteins (Probability_Class_1)
+  -o OUTPUT, --output OUTPUT
+                        Output directory for saving generated files
+
+```
+
+## Explanation of the Output files:
+
+#### blast_against_essential_genes.tsv: 
+BLAST outputs of ```potential_targets.fasta``` that were aligned against human.fasta. Suggestion: Avoid targets that are homologues to human proteins. 
+#### blast_against_host.tsv:
+BLAST outputs of ```potential_targets.fasta``` that were aligned against essential.fasta. Suggestion: Select targets that are homologues to essential proteins. 
+#### dde.csv:
+Dipeptide Deviation from Expected Mean features (DDE) of the ```-i INPUT``` fasta file.
+#### filtered_sequences.csv:
+proteins that have probability socre fpr ```Probability_Class_1``` more than the ```-t THRESHODL``` value. If you do not provide any threshold value. It will run with default value ```default=0.5```.  
+#### potential_targets.fasta:
+Fasta file that contains the protein sequences of ```filtered_sequences.csv```. 
+#### probability_score.csv:
+Probability score of each portein being druggable (Probability_Class_1) or non_druggable (Probability_Class_0).
+
+
+
