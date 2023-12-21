@@ -54,7 +54,7 @@ python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
 ## Options:
 
 ```
-Wellcome to DeeproMic! Please provide a protein fasta file as input
+Wellcome to DeeproMic! Please provide a protein fasta file as input.
 usage: deepromic.py [-h] -i INPUT [-t THRESHOLD] [-o OUTPUT]
 
 Description of your script.
