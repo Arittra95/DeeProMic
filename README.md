@@ -1,17 +1,17 @@
-# DeeProMic (DEEp learning based druggable Protein classifier against Microorganisms)
+# DeeProMic (DEEp learning based therapeutic Protein classifier against Microorganisms)
 
 <p align="center">
   <img src="https://github.com/Arittra95/DeeProMic/assets/57245109/932cc60c-37c0-45ab-b130-7d0710f22bd2" alt="Image description here">
 </p>
 
-A classifier to predict poteintial druggable targets of any microorganims.
+A classifier to predict poteintial therapeutic targets against any microorganims.
 
 ## Introduction
 
-DeeProMic is a Long Short-Term Memory (LSTM) based druggable protein classifier which has been trained on all poteintial druggable targets/ proteins (for human only) of UniProt Reference Clusters 90 (UniRef90).
+DeeProMic is a Long Short-Term Memory (LSTM) based therapeutic protein classifier which has been trained on all poteintial therapeutic targets/ proteins (for human only) of UniProt Reference Clusters 90 (UniRef90).
 
-It has been tested on various bacteria and eukaryotic proteins. DeeProMic takes two steps to identify druggable targets. 
-First, it predicts the druggable proteins using an LSTM model. Finally, it charachterizes those proteins using Basic Local Alignment Search Tool (BLAST) against human proteome and essential proteins of Database of Essential Genes (DEG).
+It has been tested on various bacteria and eukaryotic proteins. DeeProMic takes two steps to identify therapeutic targets. 
+First, it predicts the therapeutic proteins using an LSTM model. Finally, it charachterizes those proteins using Basic Local Alignment Search Tool (BLAST) against human proteome and essential proteins from Database of Essential Genes (DEG).
 
 ## How to install?
 
@@ -86,7 +86,7 @@ proteins that have probability socre fpr ```Probability_Class_1``` more than the
 #### potential_targets.fasta:
 Fasta file that contains the protein sequences of ```filtered_sequences.csv```. 
 #### probability_score.csv:
-Probability score of each portein being druggable (Probability_Class_1) or non_druggable (Probability_Class_0).
+Probability score of each portein being therapeutic (Probability_Class_1) or non_therapeutic (Probability_Class_0).
 
 ## Explanation of other Output files outside the output directory:
 
