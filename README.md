@@ -96,7 +96,7 @@ Diamond database file of the essential.fasta.
 #### host_protein_DB.dmnd: 
 Diamond database file of the human.fasta.
 
-#### <input>_modified.fasta:
+#### ${input}_modified.fasta:
 input fasta with modified/ short sequence headers. 
 
 
