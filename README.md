@@ -81,7 +81,7 @@ BLAST outputs of ```potential_targets.fasta``` that were aligned against essenti
 #### dde.csv:
 Dipeptide Deviation from Expected Mean features (DDE) of the ```-i INPUT``` fasta file.
 #### filtered_sequences.csv:
-proteins that have probability socre fpr ```Probability_Class_1``` more than the ```-t THRESHODL``` value. If you do not provide any threshold value. It will run with default value ```default=0.5```.  
+proteins that have probability socre fpr ```Probability_Class_1``` more than the ```-t THRESHODL``` value. If you do not provide any threshold value, it will run with default value ```default=0.5```.  
 #### potential_targets.fasta:
 Fasta file that contains the protein sequences of ```filtered_sequences.csv```. 
 #### probability_score.csv:
