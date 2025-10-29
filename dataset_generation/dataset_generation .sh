@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script can be used to generate train and test data 
+
 # activate conda environment
 
 # Record the start time
