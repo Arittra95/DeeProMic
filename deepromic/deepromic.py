@@ -1,5 +1,5 @@
 #!/bin/python
-
+# Welcome to DeeproMic! 
 # File name         :deepromic.py
 # description       :Classification of druggable targets using GRU model
 # author            :Arittra Bhattacharjee; email: arittra.bioinfo@gmail.com 
