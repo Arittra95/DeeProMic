@@ -61,6 +61,8 @@ cd /path/to/your/deepromic/directory
 nano ~/.bashrc   # or ~/.zshrc
 export PATH="$PATH:/path/to/deeproMic/deepromic"
 source ~/.bashrc   # or ~/.zshrc
+conda activate deepromic
+python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
 
 ```
 
