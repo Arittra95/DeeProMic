@@ -17,13 +17,22 @@ First, it predicts the therapeutic proteins using an LSTM model. Finally, it cha
 
 Requirements: 
 
-1) [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) 
+1) [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 
-2) Operating system (OS): Built and tested on Ubuntu 22.04 LTS. You can try it using other Linux or MacOS based OSs. 
+Example: 
+
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+
+```
+
+2) Operating system (OS): Built on Ubuntu 22.04 LTS and tested on Ubuntu 22.04 LTS/ 24.04 LTS. You can try it using other Linux or MacOS based OSs. 
 
 3) [ProFeatX](https://github.com/usubioinfo/profeatx) (if the provided profeatx dose not work in your system)
 
-Downliad the files
+Download the files
 
 ```bash
 
