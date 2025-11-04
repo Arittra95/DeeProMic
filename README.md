@@ -19,9 +19,10 @@ Requirements:
 
 1) [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 
-Example: 
+Installation example: 
 
 ```bash
+
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
