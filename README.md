@@ -1,4 +1,4 @@
-# DeeProMic (DEEp learning based therapeutic Protein classifier against Microorganisms)
+# DeeProMic (DEEp learning based therapeutic PROtein classifier against MICroorganisms)
 
 <p align="center">
   <img src="https://github.com/Arittra95/DeeProMic/assets/57245109/932cc60c-37c0-45ab-b130-7d0710f22bd2" alt="Image description here">
