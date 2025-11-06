@@ -41,7 +41,7 @@ cd /path/to/your/desired/directory
 git clone https://github.com/Arittra95/DeeProMic.git
 
 ```
-After downloading the files, you have to make a conda environment called "deepromic" using ```environment.yml``` . To do so, use these codes:
+After downloading the files, you have to make a conda environment called "deepromic" using ```environment.yml``` . To do so, use these commands:
 
 ```bash
 cd deepromic/
@@ -55,7 +55,7 @@ chmod +x deepromic.py
 
 ## How to use?
 
-### Easy way:
+### Method 1- Easy way:
 
 
 ```bash
@@ -64,7 +64,7 @@ conda activate deepromic
 python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
 
 ```
-### Professional way:
+### Method 2- Professional way:
 
 ```bash
 cd /path/to/your/deepromic/directory
