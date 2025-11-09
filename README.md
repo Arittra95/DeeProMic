@@ -99,6 +99,13 @@ options:
 
 ## Explanation of the Output files:
 
+#### probability_score.csv:
+Probability score of each portein being therapeutic (Probability_Class_1) or non_therapeutic (Probability_Class_0).
+#### filtered_sequences.csv:
+proteins that have probability socre for ```Probability_Class_1``` more than the ```-t THRESHODL``` value. If you do not provide any threshold value, it will run with default value ```default=0.5```. 
+#### potential_targets.fasta:
+Fasta sequences that contains the protein sequences of ```filtered_sequences.csv```. 
+
 #### blast_against_essential_genes.tsv: 
 
 BLAST outputs of ```potential_targets.fasta``` that were aligned against human.fasta. Suggestion: Avoid targets that are homologues to human proteins.Please go through [Diamond](https://github.com/bbuchfink/diamond_docs/blob/master/1%20Tutorial.MD) for further analysis.   
@@ -106,12 +113,7 @@ BLAST outputs of ```potential_targets.fasta``` that were aligned against human.f
 BLAST outputs of ```potential_targets.fasta``` that were aligned against essential.fasta. Suggestion: Select targets that are homologues to essential proteins. Please go through [Diamond](https://github.com/bbuchfink/diamond_docs/blob/master/1%20Tutorial.MD) for further analysis. 
 #### dde.csv:
 Dipeptide Deviation from Expected Mean features (DDE) of the ```-i INPUT``` fasta file.
-#### filtered_sequences.csv:
-proteins that have probability socre fpr ```Probability_Class_1``` more than the ```-t THRESHODL``` value. If you do not provide any threshold value, it will run with default value ```default=0.5```.  
-#### potential_targets.fasta:
-Fasta file that contains the protein sequences of ```filtered_sequences.csv```. 
-#### probability_score.csv:
-Probability score of each portein being therapeutic (Probability_Class_1) or non_therapeutic (Probability_Class_0).
+
 
 ## Explanation of other Output files outside the output directory:
 
