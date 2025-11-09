@@ -124,5 +124,19 @@ Diamond database file of the human.fasta.
 #### ${input}_modified.fasta:
 input fasta with modified/ short sequence headers. 
 
+## 📦 DeeProMic Dataset Release
+
+We’ve published the datasets used to train and test **DeeProMic** in our [v1.0 release](https://github.com/Arittra95/DeeProMic/releases/tag/v1.0).
+
+### 🔗 Download Links
+- [Test_dataset.csv](https://github.com/Arittra95/DeeProMic/releases/download/v1.0/Test_dataset.csv) — 1.64 MB
+- [Train_and_test_datast.csv](https://github.com/Arittra95/DeeProMic/releases/download/v1.0/Train_and_test_datast.csv) — 583 MB
+
+### 🧠 About the Data
+These datasets were used to train and evaluate the **DeeProMic** model, which focuses on therapeutic protein/ target classification.
+
+For more details, see the full release notes [here](https://github.com/Arittra95/DeeProMic/releases/tag/v1.0).
+
+
 
 
