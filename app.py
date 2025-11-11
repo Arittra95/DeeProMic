@@ -38,7 +38,7 @@ if uploaded_file:
                     ]
                     
                     # Execute
-                    result = subprocess.run(cmd, capture_output=True, text=True, cwd="/home/beast/depromic_output")
+                    result = subprocess.run(cmd, capture_output=True, text=True, cwd=os.path.dirname(os.path.abspath(__file__)))
                     
                     if result.returncode != 0:
                         st.error(f"Error: {result.stderr}")
