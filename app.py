@@ -1,9 +1,16 @@
-import streamlit as st
 import os
+import stat
+import subprocess
+
+# Make profeatx executable
+profeatx_path = os.path.join(os.path.dirname(__file__), "profeatx")
+if os.path.exists(profeatx_path):
+    os.chmod(profeatx_path, stat.S_IRWXU | stat.S_IRGRP | stat.S_IXGRP)
+
+import streamlit as st
 import tempfile
 import pandas as pd
 from pathlib import Path
-import subprocess
 
 st.set_page_config(page_title="DeeProMic Web", page_icon="🧬", layout="wide")
 st.title("🧬 DeeProMic: Therapeutic Protein Classifier")
