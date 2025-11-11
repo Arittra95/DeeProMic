@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Welcome to DeeproMic! 
+# Welcome to DeeproMic!! 
 # File name         :deepromic.py
 # description       :Classification of druggable targets 
 # author            :Arittra Bhattacharjee; email: arittra.bioinfo@gmail.com 
