@@ -76,6 +76,13 @@ python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
 
 ```
 
+### Method 3- Using Docker:
+
+```bash
+docker pull arittrabioinfo/deepromic-app
+```
+
+
 ## Options:
 
 ```
