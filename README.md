@@ -31,7 +31,7 @@ source ~/.bashrc
 
 2) Operating system (OS): Built on Ubuntu 22.04 LTS and tested on Ubuntu 22.04 LTS/ 24.04 LTS. You can try it using other Linux or MacOS based OSs. 
 
-3) [ProFeatX](https://github.com/usubioinfo/profeatx) (if the provided profeatx dose not work in your system)
+3) You may need [ProFeatX](https://github.com/usubioinfo/profeatx) (if the provided profeatx dose not work in your system)
 
 Download the files
 
@@ -55,15 +55,33 @@ chmod +x deepromic.py
 
 ## How to use?
 
+### Method 0- Use the Online version:
+
+Go here: https://huggingface.co/spaces/Arittra/deepromic
+
 ### Method 1- Easy way:
 
 
 ```bash
 cd /path/to/your/deepromic/directory
 conda activate deepromic
-python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
-
 ```
+#### For Graphical user interface (GUI), run this:
+
+```bash
+streamlit run app.py
+```
+By default, You should see Deepromic by default if not then Open your browser and go to:
+
+```bash
+http://localhost:8501
+```
+#### For Command Line Interface (CLI), run this:
+
+```bash
+python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
+```
+
 ### Method 2- Professional way:
 
 ```bash
@@ -75,13 +93,19 @@ conda activate deepromic
 python deepromic.py -i <path_to_input_fasta> -o <path_to_output_directory>
 
 ```
+or for GUI:
 
-### Method 3- Using Docker:
+```bash
+streamlit run app.py
+```
+
+### Method 3- If you have docker then:
 
 ```bash
 docker pull arittrabioinfo/deepromic-app
+docker run -it --rm -p 8501:8501 arittrabioinfo/deepromic-app:latest
 ```
-
+Then go to ```http://localhost:8501```
 
 ## Options:
 
