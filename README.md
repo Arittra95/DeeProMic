@@ -6,14 +6,14 @@
 
 A classifier to predict poteintial therapeutic targets against any microorganims.
 
-## Introduction
+# Introduction
 
 DeeProMic is a therapeutic protein classifier which has been trained on poteintial therapeutic targets/ proteins (for human only) of UniProt Reference Clusters 90 (UniRef90) and Uniref50. These proteins were characterized rigorously with Subtractive Proteomics methods (a computational method used to identify potential drug and vaccine targets by comparing a pathogen's proteome against a host's proteome).
 
 It has been tested on various bacterial and eukaryotic proteins. DeeProMic takes two steps to identify therapeutic targets. 
 First, it predicts the therapeutic proteins using an LSTM model. Finally, it charachterizes those proteins using Basic Local Alignment Search Tool (BLAST) against human proteome and essential proteins from [Database of Essential Genes (DEG)](http://origin.tubic.org/deg/public/index.php/download).
 
-## How to install?
+# How to install?
 
 Requirements: 
 
@@ -53,11 +53,13 @@ chmod +x deepromic.py
 
 ```
 
-## How to use?
+# How to use?
 
 ### Method 0- Use the Online version:
 
 Go here: https://huggingface.co/spaces/Arittra/deepromic
+
+##### Note: you may need to refresh/ restart several times to run the program. 
 
 ### Method 1- Easy way:
 
